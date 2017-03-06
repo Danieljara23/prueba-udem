@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Prueba</title>
+	<!--Import Google Icon Font-->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src = "js/custom.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<h1 class="text-center">Actividades Prueba</h1>
+		<div class="row seleccion">	
+			<h3 class="text-center">Seleccione la actividad que desea realizar: </h3>
+			<div class="col-md-4 col-md-offset-4">
+				<div class="col-md-12 text-center"> 
+					<button id="btn-animales" name="singlebutton" class="btn btn-default">Animales</button> 
+					<button id="btn-frutas" name="singlebutton" class="btn btn-default">Frutas</button> 
+				</div>
+			</div>
+		</div>
+		<div class="row descripcion-animales">
+			<div class="col-md-11 col-md-offset-1 animals">
+				<h4>Actividad: Selección de acertijos</h4>
+				<p><strong>Objetivo:</strong>Identificar las palabras que están relacionadas con el tema Animales</p>
+				<p><strong>Enunciado: </strong>Haga clic el botón <strong>Correcto</strong> o <strong>Incorrecto</strong> para las palabras que representan Animales.</p>
+			</div>
+		</div>
+		<div class="row juego-animales">
+			<div class="col-md-7 col-md-offset-2 box-prueba">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="animal">
+							<p class="text-center" id="items"><strong></strong></p>
+						</div>
+						<div class="text-center botones">
+							<i class="fa fa-check-circle good fa-2x" aria-hidden="true"></i>
+							<i class="fa fa-times-circle bad fa-2x" aria-hidden="true"></i>
+						</div>
+						<div class="game-over">
+							<h4>¡Ha finalizado!</h4>
+							<p>Las respuestas correctas son: Perro, Gallina, Colibrí, Vaca, Gusano, Caballo</p>
+							<p>Si usted ha obtenido más desaciertos que aciertos, le recomendamos que estudie nuevamente los contenidos e intente, una vez más, realizar la actividad.</p>
+							<div class="col-md-12 text-center"> 
+								<button  name="singlebutton" class="btn btn-default reintentar">Reitentar</button> 
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="aciertos text-center">
+							<p id="goods-number"><strong>0</strong></p>
+							<p><strong>Aciertos</strong></p>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="errores text-center">
+							<p id="bads-number"><strong>0</strong></p>
+							<p><strong>Errores</strong></p>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<div class="row descripcion-frutas">
+			<div class="col-md-11 col-md-offset-1 animals">
+				<h4>Actividad: Selección de acertijos</h4>
+				<p><strong>Objetivo:</strong>Identificar las palabras que están relacionadas con el tema Frutas.</p>
+				<p><strong>Enunciado: </strong>Haga clic el botón <strong>Correcto</strong> o <strong>Incorrecto</strong> para las palabras que representan Frutas.</p>
+			</div>
+		</div>
+		<div class="row juego-frutas">
+			<div class="col-md-7 col-md-offset-2 box-prueba">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="animal">
+							<p class="text-center" id="items"><strong></strong></p>
+						</div>
+						<div class="text-center botones">
+							<i class="fa fa-check-circle good fa-2x" aria-hidden="true"></i>
+							<i class="fa fa-times-circle bad fa-2x" aria-hidden="true"></i>
+						</div>
+						<div class="game-over">
+							<h4>¡Ha finalizado!</h4>
+							<p>Las respuestas correctas son: Banano, Mango, Fresa, Kiwi, Pera, Mandarina, Lulo, Papaya</p>
+							<p>Si usted ha obtenido más desaciertos que aciertos, le recomendamos que estudie nuevamente los contenidos e intente, una vez más, realizar la actividad.</p>
+							<div class="col-md-12 text-center"> 
+								<button  name="singlebutton" class="btn btn-default reintentar">Reitentar</button> 
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="aciertos text-center">
+							<p id="goods-number"><strong>0</strong></p>
+							<p><strong>Aciertos</strong></p>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="errores text-center">
+							<p id="bads-number"><strong>0</strong></p>
+							<p><strong>Errores</strong></p>
+						</div>
+					</div>
+				</div>				
+			</div>	
+		</div>
+
+	</div>
+	<footer>
+		<div class="footer">
+			
+		</div>
+	</footer>
+</body>
+</html>
